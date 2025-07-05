@@ -114,6 +114,20 @@ Dự án được nhóm phát triển song song với **ứng dụng riêng trê
 
 ---
 
+## 📝 Tác giả
+
+- **Mai Đình Đức Trung**
+- **Nguyễn Viết Minh**
+- **Lê Văn Nam**
+- **Lê Việt Cường**
+- **Trần Văn Trọng**
+- **Khiếu Hữu Tiến Dũng**
+- **Vũ Thị Mai Phương**
+- **Nguyễn Ngọc Gia Bảo**
+- [DucTrung184](hhttps://github.com/DucTrung184)
+
+---
+
 ## 🔧 Đóng góp – Contributing
 
 Mọi đóng góp cải tiến hoặc sửa lỗi đều được hoan nghênh!  
