@@ -47,6 +47,15 @@ Chức năng chính gồm: cảm biến nhiệt độ, độ ẩm, phát hiện 
 
 ## 📁 Cấu trúc thư mục – Directory Structure
 
+<pre> ```
+  ├── src/
+  │ ├── soft_i2c.c
+  │ ├── soft_i2c.h
+  │ └── main.c
+  ├── .gitignore
+  └── README.md 
+  ``` </pre>
+  
 ---
 
 ## 🛠️ Yêu cầu – Requirements
