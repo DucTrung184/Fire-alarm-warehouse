@@ -47,7 +47,6 @@ Chức năng chính gồm: cảm biến nhiệt độ, độ ẩm, phát hiện 
 
 ## 📁 Cấu trúc thư mục – Directory Structure
 
-
 ---
 
 ## 🛠️ Yêu cầu – Requirements
@@ -60,24 +59,58 @@ Chức năng chính gồm: cảm biến nhiệt độ, độ ẩm, phát hiện 
 
 ## 🧪 Biên dịch & Nạp – Build & Flash
 
-### ➤ CodeVisionAVR IDE
+### ➤ Dùng CodeVisionAVR IDE
 
-1. Tạo project `.prj` nếu chưa có.
-2. Cấu hình:
-   - MCU: **ATmega328P**
-   - Clock: **External 16 MHz**
-3. Nhấn **F9** để build.
-4. Nạp qua **Tools → Chip Programmer** bằng USBasp.
+#### 1. Tạo Project mới
+
+1. Mở **CodeVisionAVR** → chọn **File → New → Project**
+2. Chọn chip **ATmega328P**, crystal **16 MHz**, nhấn **Next** đến khi hoàn tất
+
+#### 2. Cấu hình project thêm file `.c`
+
+1. Nhấn nút **Project** trên thanh công cụ → chọn **Configuration**
+2. Trong cửa sổ mới:
+   - Vào tab **File**
+   - **Xoá hết** các file có sẵn
+   - **Add** 2 file từ thư mục `src/`:
+     - `main.c`
+     - `soft_i2c.c`
+   - Nhấn **OK**
+3. Không thêm bất kỳ file nào ngoài 2 file trên
+
+#### 3. Biên dịch & nạp
+
+Nhấn **F9** để biên dịch.
+
+---
+
+## 📱 Lưu ý khi sử dụng với ứng dụng Bluetooth
+
+Dự án được nhóm phát triển song song với **ứng dụng riêng trên App Inventor** để điều khiển hệ thống qua **Bluetooth**.
+
+### 🔹 Trường hợp 1: Dùng đúng app do nhóm cung cấp
+
+- Người dùng cần tạo app bằng **MIT App Inventor**
+- App này sẽ gửi chính xác các ký tự: `B`, `F`, `G`, `D`, `E`
+- App sẽ tương thích 100% với mã nguồn dự án
+
+### 🔹 Trường hợp 2: Dùng app có sẵn (trên CH Play)
+
+- Các app như **Serial Bluetooth Terminal**, **Bluetooth Controller** có thể không gửi đúng ký tự
+- Bạn cần:
+  - **Sửa mã nguồn C** để phù hợp với lệnh từ app đang dùng
+  - Hoặc chỉnh app để gửi đúng ký tự như trên
+
+> ✅ Khuyên dùng app có thể tùy chỉnh nút gửi như:  
+> [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal)
 
 ---
 
 ## 🧑‍💻 Sử dụng – Usage
 
-- Mở terminal UART tốc độ **9600 bps**
+- Mở terminal UART (9600 bps)
 - Gửi các lệnh: `B`, `F`, `G`, `D`, `E`
-- Ví dụ dữ liệu UART:
-Nhiet do:29C,Do am:61%,Lua:KHONG
-Nhiet do:31C,Do am:58%,Lua:CO
+- Ví dụ log UART:
 
 ---
 
