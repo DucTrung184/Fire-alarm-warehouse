@@ -120,8 +120,11 @@ Dự án được nhóm phát triển song song với **ứng dụng riêng trê
 - Mở terminal UART (9600 bps)
 - Gửi các lệnh: `B`, `F`, `G`, `D`, `E`
 - Ví dụ log UART:
+
+<pre> ```
 Nhiet do:29C,Do am:61%,Lua:KHONG
 Nhiet do:31C,Do am:58%,Lua:CO
+  ``` </pre>
 
 ---
 
