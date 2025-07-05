@@ -1,0 +1,44 @@
+# ==== Build output files ====
+*.o
+*.obj
+*.d
+*.dep
+*.lst
+*.map
+*.elf
+*.cof
+*.sym
+*.hex      
+*.eep
+*.bin
+*.log
+*.tmp
+*.bak
+
+# ==== CodeVisionAVR project files ====
+*.out
+*.prj.bak
+*.db
+*.cvp
+*.cwk
+
+# ==== Directories often created ====
+/Debug/
+/Release/
+/build/
+/output/
+/dist/
+
+# ==== IDE-specific folders ====
+.vscode/
+.idea/
+
+# ==== OS/system files ====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==== Temporary files ====
+*~
+*.swp
+*.swo
